@@ -114,11 +114,15 @@
 			flex: 1;
 		}
 
+		.letter-parent {
+			margin: auto;
+		}
+
 		.letter {
 			width: 100%;
 			text-align: center;
 			height: 80%;
-			font-size: 25em;
+			font-size: 20em;
 		}
 
 		.right {
@@ -131,7 +135,10 @@
 		.button {
 			color: #155724;
 			background-color: #d4edda;
-			border-color: #c3e6cb;
+			border: #c3e6cb 2px;
+			padding: 12px;
+			padding-right: 24px;
+			padding-left: 24px;
 		}
 	</style>
 </head>
@@ -139,10 +146,14 @@
 	<div class="main hbox">
 		<div class="article">
 			<div class="hbox" style="height:80%">
-				<div class="letter"></div>
+				<div class="letter-parent">
+					<span class="letter"></span>
+				</div>
 			</div>
 			<div class="hbox" style="height:20%">
-				<div id="right" class="right button">I got it!</div>
+				<div id="right" class="right">
+					<span class="button">I got it!</span>
+				</div>
 			</div>
 		</div>
 	</div>
